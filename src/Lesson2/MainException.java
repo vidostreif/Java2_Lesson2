@@ -38,7 +38,7 @@ public class MainException {
         try {
             int lengthArray = 4;
             if (array.length != lengthArray) {
-                throw new MyArraySizeException("Размер массива не равен " + lengthArray + ". Вычисление отменено!");
+                throw new MyArraySizeException(lengthArray);
             }
 
             Double summ = 0.0;
