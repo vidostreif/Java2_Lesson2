@@ -41,6 +41,12 @@ public class MainException {
                 throw new MyArraySizeException(lengthArray);
             }
 
+            for (int i = 0; i < array.length; i++) {
+                if (array[i].length != lengthArray) {
+                    throw new MyArraySizeException(lengthArray);
+                }
+            }
+
             Double summ = 0.0;
             for (int i = 0; i < array.length; i++) {
                 for (int j = 0; j < array[i].length; j++) {
